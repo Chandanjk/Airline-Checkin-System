@@ -3,9 +3,9 @@ Checkin and Inflight management system for airlines developed with react/redux
 
 The project was created using webpack and all the required dependencies are mentioned in package.json
 
-##Scripts
+## Scripts
 
-###npm install
+### npm install
 Run this inside project directory to download node required modules(refer package.json for dependencies)
 
 ###npm start
@@ -13,14 +13,14 @@ Runs the app in development mode with json server.<br />
 Open [http://localhost:3000] to view it in the browser.<br />
 Open [http://localhost:3001] to view json server data on browser.
 
-###Google Logins -
+### Google Logins -
 
 1.  **email:** "testAdmn2023@gmail.com",
    **password:** "admin%123",
 2.  **email:** "teststaff548@gmail.com",
    **password:** "staff%123",
 
-###Direct Logins -
+### Direct Logins -
 
 1.  **email:** "testAdmn2023@gmail.com",
     **password:** "admin%123",
@@ -29,5 +29,3 @@ Open [http://localhost:3001] to view json server data on browser.
 3.  **email:** "staff_2@gmail.com",
     **password:** "staff2",
 
-To Run the test scripts - npm test
-To Run the the app - npm start - Open http://localhost:3000 on browser
