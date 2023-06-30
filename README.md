@@ -13,6 +13,10 @@ Runs the app in development mode with json server.<br />
 Open [http://localhost:3000] to view it in the browser.<br />
 Open [http://localhost:3001] to view json server data on browser.
 
+### npm run build
+Runs the app in production mode with jason server.<br />
+Open [http://127.0.0.1:8080] to view it in the browser.
+
 ### Google Logins -
 
 1.  **email:** "testAdmn2023@gmail.com"<br />
