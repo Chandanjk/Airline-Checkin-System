@@ -15,17 +15,17 @@ Open [http://localhost:3001] to view json server data on browser.
 
 ### Google Logins -
 
-1.  **email:** "testAdmn2023@gmail.com",
-   **password:** "admin%123",
-2.  **email:** "teststaff548@gmail.com",
-   **password:** "staff%123",
+1.  **email:** "testAdmn2023@gmail.com"<br />
+   **password:** "admin%123"
+2.  **email:** "teststaff548@gmail.com"<br />
+   **password:** "staff%123"
 
 ### Direct Logins -
 
-1.  **email:** "testAdmn2023@gmail.com",
-    **password:** "admin%123",
-2.  **email:** "teststaff548@gmail.com",
-    **password:** "staff%123",
-3.  **email:** "staff_2@gmail.com",
-    **password:** "staff2",
+1.  **email:** "testAdmn2023@gmail.com"<br />
+    **password:** "admin%123"
+2.  **email:** "teststaff548@gmail.com"<br />
+    **password:** "staff%123"
+3.  **email:** "staff_2@gmail.com"<br />
+    **password:** "staff2"
 
