@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders flight details 1`] = `
+<div
+  className="card"
+  style={
+    {
+      "marginTop": "15px",
+    }
+  }
+>
+  <h3
+    className="card-header text-center font-weight-bold text-uppercase py-4 tempting-azure-gradient"
+  >
+    Flight Details
+  </h3>
+  <div
+    className="card-body frozen-dreams-gradient"
+  >
+    <div
+      className="container"
+      style={
+        {
+          "borderStyle": "solid",
+          "padding": "5px",
+        }
+      }
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            AIRLINE : 
+          </b>
+           
+          IndiGo
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            FLIGHT No : 
+          </b>
+           
+          5011
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            DEP STN : 
+          </b>
+           
+          BLR
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            ARV STN : 
+          </b>
+           
+          HYD
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            DEP DATE : 
+          </b>
+           
+          2023-08-20
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            ARV DATE : 
+          </b>
+           
+          2023-08-20
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            DEP TIME : 
+          </b>
+           
+          22:30
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <b>
+            ARV TIME : 
+          </b>
+           
+          23:30
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

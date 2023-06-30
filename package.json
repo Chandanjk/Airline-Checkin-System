@@ -1,0 +1,118 @@
+{
+  "name": "airline-checkin-system",
+  "description": "Airline Checkin System",
+  "scripts": {
+    "start": "run-p start:dev start:api",
+    "start:dev": "webpack serve --config webpack.config.dev.js --port 3000",
+    "prestart:api": "node tools/createMockDB.js",
+    "start:api": "node tools/apiServer.js",
+    "test": "jest",
+    "clean:build": "rimraf ./build && mkdir build",
+    "prebuild": "run-p clean:build test",
+    "build": "webpack --config webpack.config.prod.js",
+    "postbuild": "run-p start:api serve:build",
+    "serve:build": "http-server ./build"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
+    }
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.11.0",
+    "bootstrap": "5.0.2",
+    "immer": "^10.0.2",
+    "jwt-decode": "3.1.2",
+    "mdb-react-ui-kit": "^6.1.0",
+    "prop-types": "15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "7.2.4",
+    "react-router-dom": "5.2.0",
+    "react-toastify": "7.0.4",
+    "redux": "4.1.0",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.22.5",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "29.5.0",
+    "babel-loader": "8.2.2",
+    "babel-preset-react-app": "^10.0.1",
+    "css-loader": "5.2.6",
+    "cssnano": "5.0.6",
+    "eslint": "7.30.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-webpack-plugin": "4.0.1",
+    "fetch-mock": "9.11.0",
+    "html-webpack-plugin": "5.3.2",
+    "http-server": "0.12.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "json-server": "^0.17.3",
+    "mini-css-extract-plugin": "2.1.0",
+    "node-fetch": "^2.6.1",
+    "npm-run-all": "4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-loader": "6.1.1",
+    "react-test-renderer": "^18.2.0",
+    "redux-immutable-state-invariant": "2.1.0",
+    "redux-mock-store": "1.5.4",
+    "rimraf": "3.0.2",
+    "style-loader": "3.0.0",
+    "webpack": "^5.85.1",
+    "webpack-bundle-analyzer": "4.4.2",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "root": true
+  }
+}

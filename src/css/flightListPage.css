@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+}
+
+.table-title h3 {
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7px;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 1100px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.table-head {
+  color: #d5dde5;
+  background: #1b1e24;
+  border-bottom: 4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+}
+
+.table-head:first-child {
+  border-top-left-radius: 3px;
+}
+
+.table-head:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+.table-row {
+  border-top: 1px solid #c1c3d1;
+  border-bottom: 1px solid #c1c3d1;
+  color: #666b85;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  width: 100%;
+}
+
+.table-row:hover td {
+  background: #4e5066;
+  color: #ffffff;
+  border-top: 1px solid #22262e;
+}
+
+.table-row:first-child {
+  border-top: none;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:nth-child(odd) td {
+  background: #ebebeb;
+}
+
+.table-row:nth-child(odd):hover td {
+  background: #4e5066;
+}
+
+.table-row:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.table-row:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+.table-data {
+  background: #ffffff;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #c1c3d1;
+  width: auto;
+}
+
+.table-data:last-child {
+  border-right: 0px;
+}
+
+.table-head.text-left {
+  text-align: left;
+}
+
+.table-head.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+.table-data.text-left {
+  text-align: left;
+}
+
+.table-data.text-center {
+  text-align: center;
+}
+
+.table-data.text-right {
+  text-align: right;
+}

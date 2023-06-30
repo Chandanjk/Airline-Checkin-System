@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component is rendering without crashing 1`] = `
+<div
+  className="wrapper fadeInDown"
+>
+  <span>
+    <h1
+      className="heading1 active"
+    >
+       AIRLINE CHECK IN SYSTEM 
+    </h1>
+  </span>
+  <div
+    id="formContent"
+  >
+    <h2
+      className="heading2 active"
+    >
+       Sign In 
+    </h2>
+    <form>
+      <input
+        className="inputFields fadeIn second"
+        id="login"
+        name="email"
+        onChange={[MockFunction]}
+        placeholder="login"
+        required={true}
+        type="text"
+      />
+      <input
+        className="inputFields fadeIn third"
+        id="password"
+        name="password"
+        onChange={[MockFunction]}
+        placeholder="password"
+        required={true}
+        type="password"
+      />
+      <input
+        className="inputBtn fadeIn fourth"
+        onClick={[MockFunction]}
+        type="button"
+        value="Log In"
+      />
+      <div
+        className="fadeIn fourth"
+        id="googleLogin"
+        style={
+          {
+            "padding": "0",
+          }
+        }
+      >
+        <div
+          style={
+            {
+              "height": 40,
+            }
+          }
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;

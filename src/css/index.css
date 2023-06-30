@@ -1,0 +1,14 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #373737;
+}
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 20px 0 20px 0;
+}
