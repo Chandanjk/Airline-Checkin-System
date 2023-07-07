@@ -1,7 +1,8 @@
 # Airline-Checkin-System
-Checkin and Inflight management system for airlines developed with react/redux
+Checkin and Inflight management system for airlines developed with react/redux.<br />
+The project was created using webpack and all the required dependencies are mentioned in package.json.
 
-The project was created using webpack and all the required dependencies are mentioned in package.json
+[https://airline-checkin-system.netlify.app/]
 
 ## Scripts
 
